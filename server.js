@@ -12,3 +12,5 @@ app.get('/', (req, res) => res.send('GET FOR TEST')); //FOR TEST EXPRESS
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
+
+//video 4 router
