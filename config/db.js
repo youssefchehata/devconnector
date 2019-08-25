@@ -5,7 +5,8 @@ const connectDB = async () => {
     await mongoose
       .connect('mongodb://localhost/devconnector', {
         useNewUrlParser: true,
-        useCreateIndex: true
+        useCreateIndex: true,
+        useFindAndModify:false
       })
       .then(() => console.log('connected to MongoDB..'));
   } catch (err) {
